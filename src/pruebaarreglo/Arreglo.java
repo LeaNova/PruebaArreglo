@@ -9,11 +9,12 @@ public class Arreglo {
         int suma = 0;
         System.out.println("Cantidad de elementos en el arreglo:");
         for (int i = 0; i < lista.length; i++) {
-            System.out.println(lista[i]);
+            System.out.print(lista[i] + " ");
             suma += lista[i];
         }
         System.out.println();
         System.out.println("La suma total del arreglo es: " + suma);
+        System.out.println("El promedio total es arreglo es: " + (float)suma/lista.length);
     }
     
     static void buscarMayor(int[][] lista) {
@@ -21,7 +22,7 @@ public class Arreglo {
         System.out.println("Cantidad de elementos en el arreglo:");
         for (int i = 0; i < lista.length; i++) {
             for (int j = 0; j < lista[i].length; j++) {
-                System.out.println(lista[i][j]);
+                System.out.print(lista[i][j] + " ");
                 if (lista[i][j] > mayor) {
                     mayor = lista[i][j];
                 }
