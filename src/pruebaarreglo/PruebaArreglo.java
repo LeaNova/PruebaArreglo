@@ -1,5 +1,6 @@
 package pruebaarreglo;
 import java.util.Scanner;
+
 /**
  * @author Leandro Heredia
  */
@@ -81,26 +82,28 @@ public class PruebaArreglo {
         
         /* ------------------------------------------------------------------------ */
         
+        Scanner sc2 = new Scanner(System.in);
         System.out.println("Tercera función: Cantidad de vocales!");
         System.out.println("Ingrese algúna palabra u oración para calcular sus vocales:");
-        String str1 = sc.nextLine();
+        String str1 = sc2.nextLine();
         
         System.out.println("---------------------------------------");
         Arreglo.cuentaVocales(str1);
         System.out.println("---------------------------------------");
         
         /* ------------------------------------------------------------------------ */
-        /*
+        
         System.out.println("Cuarta función: Cuantas veces se repite la letra!");
         System.out.println("Ingrese algúna palabra u oración:");
-        String str2 = sc.nextLine();
+        String str2 = sc2.nextLine();      
         
         System.out.println("Ingrese un caracter para ver cuantas veces se repite en la palabra u oración:");
-        
+        char caracter = sc2.next().charAt(0);
         
         System.out.println("---------------------------------------");
         Arreglo.cuentaCaracter(str2, caracter);
         System.out.println("---------------------------------------");
-        */
+        
+        /* ------------------------------------------------------------------------ */
     }
 }
