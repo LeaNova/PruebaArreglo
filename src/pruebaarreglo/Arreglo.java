@@ -33,13 +33,36 @@ public class Arreglo {
     
     static void cuentaVocales(String str) {
         char[] caracteres = str.toCharArray();
-        int vocalesM = 0;
         int vocalesm = 0;
+        int vocalesM = 0;
         for (int i = 0; i < caracteres.length; i++) {
-            if (caracteres[i] == 'a' || caracteres[i] == 'e' || caracteres[i] == 'i' || caracteres[i] == 'o' || caracteres[i] == 'u') {
-                vocalesm++;
-            } else if (caracteres[i] == 'A' || caracteres[i] == 'E' || caracteres[i] == 'I' || caracteres[i] == 'O' || caracteres[i] == 'U') {
-                vocalesM++;
+            switch (caracteres[i]) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'á':
+                case 'é':
+                case 'í':
+                case 'ó':
+                case 'ú':
+                    vocalesm++;
+                    break;
+                case 'A':
+                case 'E':
+                case 'I':
+                case 'O':
+                case 'U':
+                case 'Á':
+                case 'É':
+                case 'Í':
+                case 'Ó':
+                case 'Ú':
+                    vocalesM++;
+                    break;
+                default:
+                    break;
             }
         }
         System.out.println("La cadena: " + str);
