@@ -8,7 +8,6 @@ public class PruebaArreglo {
 
     public static void main(String[] args) {
         
-        /*
         int[] arr1 = {5, 12, 19, 12, 23};
         int[][] arr2 = {{11, 15, 55}, {14, 45, 33, 11}};
         
@@ -20,7 +19,6 @@ public class PruebaArreglo {
         Arreglo.cuentaVocales("caminando");
         System.out.println("---------------------------------------");
         Arreglo.cuentaCaracter("esternocleidomastoideo", 'e');
-        */
         
         /* ------------------------------------------------------------------------ */
         
